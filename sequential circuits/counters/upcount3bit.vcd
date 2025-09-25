@@ -1,0 +1,189 @@
+$date
+	Tue Sep 23 17:25:19 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module upcount3bit_tb $end
+$var wire 3 ! count [2:0] $end
+$var reg 1 " clk $end
+$var reg 1 # rst $end
+$scope module DUT $end
+$var wire 1 " clk $end
+$var wire 1 # rst $end
+$var reg 3 $ count [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 $
+0#
+0"
+b0 !
+$end
+#2
+1"
+#4
+0"
+#6
+1"
+#8
+0"
+#10
+b1 !
+b1 $
+1"
+1#
+#12
+0"
+#14
+b10 !
+b10 $
+1"
+#16
+0"
+#18
+b11 !
+b11 $
+1"
+#20
+0"
+#22
+b100 !
+b100 $
+1"
+#24
+0"
+#26
+b101 !
+b101 $
+1"
+#28
+0"
+#30
+b110 !
+b110 $
+1"
+#32
+0"
+#34
+b111 !
+b111 $
+1"
+#36
+0"
+#38
+b0 !
+b0 $
+1"
+#40
+0"
+0#
+#42
+1"
+#44
+0"
+#46
+1"
+#48
+0"
+#50
+b1 !
+b1 $
+1"
+1#
+#52
+0"
+#54
+b10 !
+b10 $
+1"
+#56
+0"
+#58
+b11 !
+b11 $
+1"
+#60
+b0 !
+b0 $
+0"
+0#
+#62
+1"
+#64
+0"
+#66
+1"
+#68
+0"
+#70
+b1 !
+b1 $
+1"
+1#
+#72
+0"
+#74
+b10 !
+b10 $
+1"
+#76
+0"
+#78
+b11 !
+b11 $
+1"
+#80
+0"
+#82
+b100 !
+b100 $
+1"
+#84
+0"
+#86
+b101 !
+b101 $
+1"
+#88
+0"
+#90
+b110 !
+b110 $
+1"
+#92
+0"
+#94
+b111 !
+b111 $
+1"
+#96
+0"
+#98
+b0 !
+b0 $
+1"
+#100
+0"
+0#
+#102
+1"
+#104
+0"
+#106
+1"
+#108
+0"
+#110
+b1 !
+b1 $
+1"
+1#
