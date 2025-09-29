@@ -181,3 +181,19 @@ Flipflop-->TFF;
 The codes and simulation results of all the flip-flops above are in : ([flipflops](https://github.com/SrujanPrasad/Verilog-HDL-basics/tree/564910a31cb35bb47f6bbac18c264e7056536dc3/sequential%20circuits/flipflops))
 
 ### Counters 
+A counter is a simple counting circuit that either counts upwards or downwards or both ways based on mode control. 
+There are two types: Upcounters and Downcounters
+
+The codes and simulation results of all the types of counters are in : ([counters](https://github.com/SrujanPrasad/Verilog-HDL-basics/tree/27fcb2770a879dde1f5258439ebb4b5fa8b172cf/sequential%20circuits/counters))
+
+### Sequence Detectors 
+The sequence detectors detect a particular sequence from a bit stream of inputs. There are two types of FSMs : 
+```mermaid
+graph TD;
+FSM-->Mealy_FSM;
+FSM-->Moore_FSM;
+```
+- Mealy FSM- Output depends on the present state and inputs.
+- Moore FSM -  output depends only on the present state.
+
+The codes and simulation results of all the sequence detectors are in : ([Sequence_Detectors](https://github.com/SrujanPrasad/Verilog-HDL-basics/tree/27fcb2770a879dde1f5258439ebb4b5fa8b172cf/sequential%20circuits/sequence%20detectors))
