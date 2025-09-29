@@ -180,3 +180,4 @@ Flipflop-->TFF;
 
 The codes and simulation results of all the flip-flops above are in : ([flipflops](https://github.com/SrujanPrasad/Verilog-HDL-basics/tree/564910a31cb35bb47f6bbac18c264e7056536dc3/sequential%20circuits/flipflops))
 
+### Counters 
