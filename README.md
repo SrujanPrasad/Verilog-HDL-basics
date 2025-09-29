@@ -89,6 +89,94 @@ The encoder is a combinational circuit consisting of n inputs and m outputs (n<m
 ### Decoder 
 The decoder is a combinational circuit that consists of n inputs and m outputs (n>m) and decodes the data transmitted into its binary form. The codes and simulation results are in : ([DECODERS](https://github.com/SrujanPrasad/Verilog-HDL-basics/tree/e53a532845ced5043de5e60925aef1d0a915a8f9/Comb/decoder))
 
-### 
+## 3. Sequential Circuits 
 
+```mermaid
+graph TD;
+Sequential-->Latches;
+Sequential-->Flipflops;
+Sequential-->Counters;
+Sequential-->Shiftregisters;
+Sequential-->SequenceDetectors;
+```
+
+### Latches :
+- The latch operates based on the control/enable signal. It is a level-triggered one-bit memory element.
+- The latches simulated here are : 
+
+```mermaid
+graph TD;
+Latch-->NANDSRLatch;
+Latch-->NORSRLatch;
+Latch-->DLatch;
+```
+The codes and simulation results of all the latches above are in : ([Latches](https://github.com/SrujanPrasad/Verilog-HDL-basics/tree/564910a31cb35bb47f6bbac18c264e7056536dc3/sequential%20circuits/latches))
+
+### Flip Flops:
+- The combination of master and slave latches forms a flip-flop, and they operate based on the clock signal. It is an edge-triggered one-bit memory element.
+- The flip flops simulated here are : 
+
+```mermaid
+graph TD;
+Flipflop-->SRFF;
+Flipflop-->DFF;
+Flipflop-->JKFF;
+Flipflop-->TFF;
+```
+
+**SR FLIP FLOP** :
+
+ <br> <div align="center"> 
+  **Truth Table** :
+| CLK| S | R | Q | Qb|
+|:-:|:-:|:---:|:---:|:----:|
+| 0 | x |  x  |  Qn  |  Qn_b   |
+| 1 | 0 |  0  |  Qn  |  Qn_b    |
+| 1 | 0 |  1  |  0  |  1   |
+| 1 | 1 |  0  |  1  |  0   |
+| 1 | 1 |  1  |  x  |  x   |
+
+</div>
+
+**D FLIP FLOP** :
+
+ <br> <div align="center"> 
+  **Truth Table** :
+| CLK| D | Q | Qb | 
+|:-:|:-:|:---:|:---:|
+| 0 | x |  Qn  |  Qnb 
+| 1 | 0 |  0  |  1 
+| 1 | 1 |  1  |  0 
+</div>
+
+**JK FLIP FLOP** :
+
+ <br> <div align="center"> 
+  **Truth Table** :
+| CLK| J | K | Q | Qb|
+|:-:|:-:|:---:|:---:|:----:|
+| 0 | x |  x  |  Qn  |  Qn_b   |
+| 1 | 0 |  0  |  Qn  |  Qn_b    |
+| 1 | 0 |  1  |  0  |  1   |
+| 1 | 1 |  0  |  1  |  0   |
+| 1 | 1 |  1  |  Qnb  |  Qn   |
+
+</div>
+
+</div>
+
+**T FLIP FLOP** :
+
+ <br> <div align="center"> 
+  **Truth Table** :
+| CLK| D | Q | Qb | 
+|:-:|:-:|:---:|:---:|
+| 0 | x |  Qn  |  Qnb 
+| 1 | 0 |  Qn  |  Qnb 
+| 1 | 1 |  Qnb  |  Qn
+
+</div>
+
+
+The codes and simulation results of all the flip-flops above are in : ([flipflops](https://github.com/SrujanPrasad/Verilog-HDL-basics/tree/564910a31cb35bb47f6bbac18c264e7056536dc3/sequential%20circuits/flipflops))
 
