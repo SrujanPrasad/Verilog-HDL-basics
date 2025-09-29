@@ -1,0 +1,99 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000029044acbe10 .scope module, "mux41_cond_tb" "mux41_cond_tb" 2 1;
+ .timescale 0 0;
+v00000290449e47c0_0 .var "I", 3 0;
+v00000290449e49a0_0 .var "S", 1 0;
+v00000290449e4860_0 .net "out", 0 0, L_00000290449e40e0;  1 drivers
+S_0000029044996fd0 .scope module, "DUT" "mux41_cond" 2 5, 3 1 0, S_0000029044acbe10;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "I";
+    .port_info 1 /INPUT 2 "S";
+    .port_info 2 /OUTPUT 1 "out";
+v0000029044acbaa0_0 .net "I", 3 0, v00000290449e47c0_0;  1 drivers
+v0000029044ac6fa0_0 .net "S", 1 0, v00000290449e49a0_0;  1 drivers
+v0000029044997160_0 .net *"_ivl_1", 0 0, L_00000290449e4a40;  1 drivers
+v0000029044997200_0 .net *"_ivl_11", 0 0, L_00000290449e4d60;  1 drivers
+v00000290449972a0_0 .net *"_ivl_13", 0 0, L_00000290449e4f40;  1 drivers
+v0000029044997340_0 .net *"_ivl_15", 0 0, L_00000290449e4040;  1 drivers
+v0000029044993550_0 .net *"_ivl_16", 0 0, L_00000290449e4220;  1 drivers
+v00000290449e4ae0_0 .net *"_ivl_3", 0 0, L_00000290449e4680;  1 drivers
+v00000290449e4900_0 .net *"_ivl_5", 0 0, L_00000290449e4c20;  1 drivers
+v00000290449e4b80_0 .net *"_ivl_7", 0 0, L_00000290449e4cc0;  1 drivers
+v00000290449e45e0_0 .net *"_ivl_8", 0 0, L_00000290449e4540;  1 drivers
+v00000290449e4180_0 .net "out", 0 0, L_00000290449e40e0;  alias, 1 drivers
+L_00000290449e4a40 .part v00000290449e49a0_0, 1, 1;
+L_00000290449e4680 .part v00000290449e49a0_0, 0, 1;
+L_00000290449e4c20 .part v00000290449e47c0_0, 3, 1;
+L_00000290449e4cc0 .part v00000290449e47c0_0, 2, 1;
+L_00000290449e4540 .functor MUXZ 1, L_00000290449e4cc0, L_00000290449e4c20, L_00000290449e4680, C4<>;
+L_00000290449e4d60 .part v00000290449e49a0_0, 0, 1;
+L_00000290449e4f40 .part v00000290449e47c0_0, 1, 1;
+L_00000290449e4040 .part v00000290449e47c0_0, 0, 1;
+L_00000290449e4220 .functor MUXZ 1, L_00000290449e4040, L_00000290449e4f40, L_00000290449e4d60, C4<>;
+L_00000290449e40e0 .functor MUXZ 1, L_00000290449e4220, L_00000290449e4540, L_00000290449e4a40, C4<>;
+    .scope S_0000029044acbe10;
+T_0 ;
+    %pushi/vec4 14, 0, 4;
+    %store/vec4 v00000290449e47c0_0, 0, 4;
+    %pushi/vec4 0, 0, 1;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v00000290449e49a0_0, 4, 1;
+    %pushi/vec4 0, 0, 1;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v00000290449e49a0_0, 4, 1;
+    %delay 20, 0;
+    %vpi_call 2 10 "$display", "S1:%d,S0:%d,out:%d", &PV<v00000290449e49a0_0, 1, 1>, &PV<v00000290449e49a0_0, 0, 1>, v00000290449e4860_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v00000290449e49a0_0, 4, 1;
+    %pushi/vec4 1, 0, 1;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v00000290449e49a0_0, 4, 1;
+    %delay 20, 0;
+    %vpi_call 2 12 "$display", "S1:%d,S0:%d,out:%d", &PV<v00000290449e49a0_0, 1, 1>, &PV<v00000290449e49a0_0, 0, 1>, v00000290449e4860_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v00000290449e49a0_0, 4, 1;
+    %pushi/vec4 0, 0, 1;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v00000290449e49a0_0, 4, 1;
+    %delay 20, 0;
+    %vpi_call 2 14 "$display", "S1:%d,S0:%d,out:%d", &PV<v00000290449e49a0_0, 1, 1>, &PV<v00000290449e49a0_0, 0, 1>, v00000290449e4860_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v00000290449e49a0_0, 4, 1;
+    %pushi/vec4 1, 0, 1;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v00000290449e49a0_0, 4, 1;
+    %delay 20, 0;
+    %vpi_call 2 16 "$display", "S1:%d,S0:%d,out:%d", &PV<v00000290449e49a0_0, 1, 1>, &PV<v00000290449e49a0_0, 0, 1>, v00000290449e4860_0 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000029044acbe10;
+T_1 ;
+    %vpi_call 2 20 "$dumpfile", "mux41.vcd" {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000029044acbe10 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "mux41_cond_tb.v";
+    "mux41_cond.v";

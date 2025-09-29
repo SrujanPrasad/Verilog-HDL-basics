@@ -1,0 +1,78 @@
+$date
+	Sat Sep 20 21:17:46 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module encoder83_tb $end
+$var wire 3 ! out [2:0] $end
+$var reg 8 " I [7:0] $end
+$scope module DUT $end
+$var wire 8 # I [7:0] $end
+$var reg 3 $ out [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 $
+b1 #
+b1 "
+b0 !
+$end
+#10
+b1 !
+b1 $
+b10 "
+b10 #
+#20
+b10 !
+b10 $
+b100 "
+b100 #
+#30
+b11 !
+b11 $
+b1000 "
+b1000 #
+#40
+b100 !
+b100 $
+b10000 "
+b10000 #
+#50
+b101 !
+b101 $
+b100000 "
+b100000 #
+#60
+b110 !
+b110 $
+b1000000 "
+b1000000 #
+#70
+b111 !
+b111 $
+b10000000 "
+b10000000 #
+#80
+bx !
+bx $
+b10000001 "
+b10000001 #
+#90
+b11000001 "
+b11000001 #
+#100
+b10010001 "
+b10010001 #
+#110
+b11001001 "
+b11001001 #
+#120
