@@ -5,11 +5,11 @@ begin
 if(!en)
 q<=0;
 else
-case({s,r})
+  case({r,s})
 2'b00 : q<=0;
 2'b01 :q<=0;
 2'b10 :q<=1;
-2'b10:q<=1'bx;
+2'b11:q<=1'bx;
 default: q<=1'bx;
 endcase
 end
