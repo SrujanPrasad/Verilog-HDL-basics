@@ -9,7 +9,7 @@ rst=0;
 j=1;k=1;
 #10 rst=1;
 end
-always #2 clk=~clk;		//to generate a 250Mhz clock (10ns period)
+  always #2 clk=~clk;		//to generate a 250Mhz clock (4ns period)
 initial
 begin
 $monitor("time = %0t , J = %d , K=%d , out = %d", $time,j,k,q);
