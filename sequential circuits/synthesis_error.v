@@ -11,4 +11,5 @@ module synerror(input clk,rst,d,output q0,q);
           q0=d;
           q=q0;
         end
-  endmodule 
+    end
+endmodule
