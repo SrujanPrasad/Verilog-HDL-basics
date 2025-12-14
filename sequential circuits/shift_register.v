@@ -8,8 +8,8 @@ module shiftreg_2bit(input clk,rst,d,output reg q,q0);
         end
       else
         begin
-          q0<=q;
           q0<=d;
+          q<=q0;
         end
     end
 endmodule
