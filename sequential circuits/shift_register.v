@@ -1,4 +1,3 @@
-```verilog
 module shiftreg_2bit(input clk,rst,d,output reg q,q0);
   always @(posedge clk or negedge rst)
     begin
@@ -14,5 +13,4 @@ module shiftreg_2bit(input clk,rst,d,output reg q,q0);
         end
     end
 endmodule
-```
       
