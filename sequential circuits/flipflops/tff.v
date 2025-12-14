@@ -8,6 +8,7 @@ else
 case(t)
 1'b0 : q<=q;
 1'b1 :q<=qb;
+default : q<=q;
 endcase
 end
 endmodule
